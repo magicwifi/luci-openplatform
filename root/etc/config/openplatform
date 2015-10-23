@@ -1,0 +1,6 @@
+
+config openplatform
+	option server '124.127.116.178'
+	option url 'login_session'
+	option inet '1' 
+

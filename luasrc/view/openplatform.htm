@@ -1,0 +1,21 @@
+<%-
+local fs   = require "nixio.fs"
+-%>
+
+<script type="text/javascript" src="<%=resource%>/cbi.js"></script>
+<script type="text/javascript">//<![CDATA[
+	function openplatform_reg() {
+	    window.location = "<%=luci.dispatcher.build_url("admin/network/openplatform_reg")%>";
+		return;
+	}
+//]]></script>
+
+<fieldset class="cbi-section">
+	<div class="cbi-section-node">
+		<div class="cbi-value cbi-value-last">
+			<div class="cbi-value-field">
+				<input class="cbi-button cbi-button-apply" type="button" onclick="openplatform_reg()" value="<%:进入%>" />
+			</div>
+		</div>
+	</div>
+</fieldset>
