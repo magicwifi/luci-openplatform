@@ -42,7 +42,7 @@ function openplatform_reg()
     local rserver
     uci.cursor():foreach("openplatform","openplatform",function(s) rserver=s.server end)
     if rserver==nil or rserver=='' then
-            rserver='124.127.116.178'
+            rserver='42.123.76.26'
      end
 
     local rurl
